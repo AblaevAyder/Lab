@@ -4,11 +4,63 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Lab3</title>
 </head>
 <body>
   <script>
-    
+  //1
+    var A="a,b,c", C=",D"
+    arr=A.split(",")
+    console.log(arr)
+    B=A.charCodeAt(3)//возвратит 44, юникод для b
+console.log(B)
+//2
+console.log(String.fromCharCode(65,66,67))//возвращает строку ABC
+//3
+console.log(A.charAt(2))//возвращает // b
+//4
+console.log(A.concat(C))//прибавляет строки к строке, возвратит a,b,c,D
+//5
+console.log(A.lastIndexOf(","))//возвратит 3, так как последний символ "," находится на 3 позиции
+//6
+console.log(A.search("d"))//возвращает -1 т.к символ "d" отсутствует
+//7
+var str = "За информацией обратитесь: Глава 3.4.5.1";
+var re = /глава (3)/i
+found = str.match(re)
+console.log(found)
+str1 = "За информацией обратитесь: Глава 3.4.5.1, Глава 7.5";
+re= /глава (3)/ig
+found1 = str.match(re)
+console.log(found1)
+//8
+console.log(A.toUpperCase())//возвратит A,B,C
+//9
+console.log(C.toLowerCase())//возвратит ,d
+//10
+console.log(C.toLocaleLowerCase())//возвратит ,d
+//11
+console.log(A.toLocaleUpperCase())//возвратит A,B,C
+//12
+console.log(A.toString())//возвратит a,b,c
+//13
+console.log(A.valueOf())//возвратит a,b,c
+//14
+console.log(A.substring(2))//возвратит b,c
+console.log(A.substring(0,3))// возвратит a,b
+//15
+console.log(str.slice(3, 10))//возвращает подстроку от символа под позицией 3 до символа под позицией 10
+console.log(str.slice(3, -2))
+//16
+console.log(str.indexOf("а"))//поиск позиции с которой начинается подстрока "а"
+console.log(str.indexOf("а", 15))//поиск позиции с которой начинается подстрока "а" начиная с позиции 15
+//17
+console.log(str.substr(3))//возвращает подстроку от позиции 3 до конца строки
+console.log(str.substr(3, 4))//возвращает подстроку из 4 символов от позиции 3
+//18
+console.log(str.replace("обратитесь","следуйте"))//заменяет подстроку "обратитесь" на "следуйте"
+//19
+console.log(str.length)//Возвращает длинну строки
   </script>
 </body>
 </html>
