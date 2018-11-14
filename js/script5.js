@@ -53,7 +53,7 @@ n = n + 5 // n = 15
 console.log(n);
 
 var x = 10
-x += 5
+x += 5//x = x+5
 console.log(x);
 
 //1)
@@ -67,6 +67,6 @@ a1 = a1+c1
 console.log(a1);
 
 //3)
-var a2 = 3, c2= 2+a2++
+var a2 = 3, c2= 2+a2++//a2=a2+1
 a2 = a2+c2
 console.log(a2);
