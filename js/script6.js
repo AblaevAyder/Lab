@@ -2,9 +2,9 @@
 /*var AA = prompt("В каком году ты поступил в КИПУ?","")
 if (AA != 2018){
   alert("False!!!")
-  alert("think about it")}
+  alert("подумай над этим")}
 else
-alert("hello pervash")*/
+alert("hello")*/
 /*var A= prompt("A=","")
 var B= prompt("B=","")
 if (A>B)
@@ -65,5 +65,5 @@ else if (sign == "*" ){
   }
 else {
   if (num2 == "0")
-  alert("u are dibil? na 0 delit nizya")
+  alert("are u dibil? na 0 delit nizya")
 }
