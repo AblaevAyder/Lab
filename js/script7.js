@@ -65,4 +65,4 @@ switch (sign) {
 
 //11
 
-var
+var word = prompt("vvedite slovo","")
