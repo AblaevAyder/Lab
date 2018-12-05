@@ -34,7 +34,7 @@ break
 }*/
 
 
-var i,j, val=0;
+var i, val=0;
 for ( i=100; i>=0; i=i-20 ) {
 val = i
 console.log ( "число:"+ val )
@@ -44,17 +44,17 @@ console.log ( "число:"+ val )
 var A=[ 12, -45, 67, 1, 90, 666 ]
 for ( i=0; i<A.length; i++ ){
   if (A[i]%2==0)
-console.log ( A[i] )
+  console.log ( A[i] )
 }
 
 
 //4
-var A,B = []
-for (i=0;i<=5;i++){
+var A=[],B = []
+for (i=0;i<5;i++){
   A[i]=Math.floor(Math.random()*100)
 }
 console.log(A);
 for(i=A.length-1;i>=0;i--){
-  B[A.length-1-i]=A[i]
+  console.log(A[i])
 }
 console.log(B);
