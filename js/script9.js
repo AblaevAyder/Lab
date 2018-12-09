@@ -47,17 +47,68 @@ for(i=0;i<arr.length;i++)
 console.log(sum/cnt);
 */
 
+/*
 //8
-var A=[]
+var A=[], B = [], C=0
+var key = +prompt("введите искомое значение", "")
 for(i=0;i<5;i++){
-   A[i]=prompt("введите A["+i+"]=")
+   A[i]=Math.floor(Math.random()*10)
 }
 for(i=0;i<A.length;i++){
-  if(A[i]== "key"){
-    console.log(A[i]);
-  }
-  else {
-    console.log("искомого значения нет");
-  }
-  break
+  if(A[i] == key){
+     B[C] = i
+     C++
+    }
 }
+if (B.length==0)console.log("искомого значения нет");
+else {
+  console.log("индексы совпадения" + B);
+}
+*/
+
+/*
+//9
+var A=[]
+var B=[], C=[]
+for (i=0;i<5;i++){
+  A[i]=+prompt("введите A["+i+"]=")
+}
+for(i=0;i<A.length;i++)
+if(A[i]>0) B.push(A[i])
+else {
+  if (A[i]<0) C.push(A[i])
+}
+console.log("положительные числа: " + B);
+console.log("отрицательные числа: " + C)
+*/
+
+/*
+//10
+var A=[]
+var B=[], C=[]
+for(i=0;i<5;i++){
+   A[i]=Math.floor(Math.random()*10)
+   B[i]=+prompt("введите B["+i+"]=")
+   C.push(A[i]+B[i])}
+console.log(A);
+console.log(B);
+console.log(C);
+*/
+
+//11
+var A = []
+var leastnum= 0, greatnum = 0
+var B = +prompt("vvedite dlinu massiva=","")
+for (i=0;i<B;i++){
+   A[i]=Math.floor(Math.random()*10-5)}
+for (i=0;i<5;i++){
+  if(A[i]>0&A[i]>greatnum)
+  greatnum= A[i]
+  else {
+    if(A[i]<0&A[i]<leastnum)
+    leastnum= A[i]
+  }
+}
+console.log(A);
+console.log("наименьшее чилло " + leastnum);
+console.log("наибольшее число " + greatnum);
