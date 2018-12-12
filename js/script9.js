@@ -13,11 +13,10 @@ console.log(S);
 var arr=[],sum=0
 for(i=0;i<5;i++){
   arr[i]=prompt("введите arr["+i+"]=")
+  sum+= +arr[i]
   console.log("arr["+i+"]=" + arr[i]);
 }
-for(i=0;i<arr.length;i++){
-  sum+= +arr[i]
-}
+
 console.log(arr);
 console.log(sum);
 */
@@ -66,7 +65,7 @@ else {
 }
 */
 
-/*
+
 //9
 var A=[]
 var B=[], C=[]
@@ -78,9 +77,10 @@ if(A[i]>0) B.push(A[i])
 else {
   if (A[i]<0) C.push(A[i])
 }
+console.log(A);
 console.log("положительные числа: " + B);
 console.log("отрицательные числа: " + C)
-*/
+
 
 /*
 //10
@@ -94,7 +94,7 @@ console.log(A);
 console.log(B);
 console.log(C);
 */
-
+/*
 //11
 var A = []
 var leastnum= 0, greatnum = 0
@@ -112,3 +112,4 @@ for (i=0;i<5;i++){
 console.log(A);
 console.log("наименьшее чилло " + leastnum);
 console.log("наибольшее число " + greatnum);
+*/
