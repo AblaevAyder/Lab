@@ -38,6 +38,7 @@ else {
   alert("не красава")
 }*/
 
+/*
 //10
 
 var num1 = +prompt("num1","")
@@ -62,7 +63,26 @@ switch (sign) {
     alert(num1/num2)
   default:
 }
-
+*/
 //11
 
-var word = prompt("vvedite slovo","")
+var word = prompt("vvedite slovo","").split(""), val=0
+
+for (i=0; i<word.length; i++){
+  switch (word[i]){
+    case "a":
+      val++
+      break;
+    case "i":
+      val++
+      break;
+    case "e":
+      val++
+      break;
+    case "o":
+      val++
+      break;
+  }
+}
+
+console.log(val);  
