@@ -38,7 +38,8 @@ function sal() {
     asie : 200
   }
   for (var key in salaries){
-    k++
+    k++;
+    
   }
   if(k==0){
     console.log("net sotrudnikov");
