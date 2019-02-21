@@ -1,3 +1,4 @@
+/*
  function c () {
   val = +prompt("vvedite chilo","")
   val = val * val
@@ -26,3 +27,6 @@ mass(function () {
   var b=7
   return a + b
 })
+*/
+a = (x, y)=>x + y
+console.log(a(1,2))
