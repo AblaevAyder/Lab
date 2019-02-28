@@ -28,5 +28,17 @@ mass(function () {
   return a + b
 })
 */
-a = (x, y)=>x + y
-console.log(a(1,2))
+/*a = (x, y)=>x + y
+console.log(a(1,2))*/
+
+/*var summ = 0
+function d(n) {
+  if (n>=0) {
+    summ+=n
+    d(n-1)
+  }
+  else {
+    console.log(summ)
+  }
+}
+d(6)*/
