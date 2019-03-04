@@ -42,3 +42,36 @@ function d(n) {
   }
 }
 d(6)*/
+/*
+var a= 100
+function displayVar() {
+  alert(a+a)
+}
+displayVar()
+alert(a)
+
+var a = 100
+ var displayVar = function () {
+   alert(a+a)
+ }
+displayVar()
+alert(a)
+
+
+var a = 100
+(function () {
+  alert(a+a)
+})()
+alert(a)*/
+
+/*
+var a = 100
+var displayVar = new Function ("","alert(a+a)")
+displayVar()
+alert(a)*/
+
+var a = 100
+
+displayVar = ()=>{alert(a+a)}
+displayVar()
+alert(a)
