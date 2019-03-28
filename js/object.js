@@ -52,7 +52,7 @@ function ex3() {
         max = salaries[key]
         maxkey[i] = key
         i++
-      
+
       }
     }
   }
