@@ -39,7 +39,7 @@ function sal() {
   }
   for (var key in salaries){
     k++;
-    
+
   }
   if(k==0){
     console.log("net sotrudnikov");
@@ -55,9 +55,28 @@ function country() {
     name : "russia",
     people : 146000000,
     s : 17000000,
-    capital : "moscow"
+    capital : {
+      name:"moscow",
+      year: 990
+    },
+    plot: function () {
+      return +this.s/+this.people
+    }
   }
-  var a= +country.s/+country.people
-  country.plot = a
-  console.log(country);
+  console.log(country.plot());
+}
+//5
+function ex5() {
+  var a = [], b = 0,i=-1
+
+  do {
+    i++
+    a[i] = +prompt("vvedite chislo","")
+   b+=a[i]
+
+  }
+  while (a[i]!=0) {
+
+  }
+  console.log(b);
 }

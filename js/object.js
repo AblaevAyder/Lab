@@ -35,20 +35,20 @@ function ex2() {
 }
 function ex3() {
   var salaries={"anna":500,"ivan":40,"alie":200,"fedya":500}
-  var k=0, max=0, maxkey = [0] ,i = 1
+  var k=0, max=0, maxkey = [] ,i = 1
   for (var key in salaries) {
     k++
   }
   if(k==0){console.log(0);}
   else {
     for(var key in salaries){
-      if(salaries[key] > max || salaries[key] > salaries[maxkey[0]]) {
+      if(salaries[key] > max && salaries[key] > salaries[maxkey[0]]) {
        max = salaries[key]
        maxkey[0] = key
 
     }
     else {
-      if(salaries[key] > max || salaries[key] == salaries[maxkey[0]] ){
+      if(salaries[key] == max && salaries[key] == salaries[maxkey[0]] ){
         max = salaries[key]
         maxkey[i] = key
         i++
@@ -58,4 +58,8 @@ function ex3() {
   }
   alert(maxkey)
 }
+}
+
+function ex4() {
+
 }
