@@ -42,7 +42,7 @@ function ex3() {
   if(k==0){console.log(0);}
   else {
     for(var key in salaries){
-      if(salaries[key] > max && salaries[key] > salaries[maxkey[0]]) {
+      if(salaries[key] > max && salaries[key] > salaries[maxkey[key]]) {
        max = salaries[key]
        maxkey[0] = key
 
@@ -61,5 +61,35 @@ function ex3() {
 }
 
 function ex4() {
+var   bankuser = {
 
+}
+bankuser.name= prompt("vvedite imya")
+bankuser.money = +prompt("vvedite kol-vo deneg")
+bankuser.srok = +prompt("vvedite srok vklada v mesyacah")
+bankuser.dohod = function () {
+  if(bankuser.money>= 100 && bankuser.money<=10000 && bankuser.srok>=1 && bankuser.srok<=12)
+  {
+    return 12
+  }
+  else {
+    if((bankuser.money>10000) && (bankuser.srok>12) && (bankuser.srok<=36))
+    {
+      return 22
+    }
+    else {
+      return "uncorreck"
+    }
+  }
+}()
+
+var bankuserClone = {};
+for (var key in bankuser) {
+bankuserClone[key]=bankuser[key];
+}
+
+var bankuserCopy = bankuser
+bankuser.name="Ayder"
+
+console.log(bankuser, bankuserCopy, bankuserClone);
 }
