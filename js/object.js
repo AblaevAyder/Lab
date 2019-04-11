@@ -93,3 +93,22 @@ bankuser.name="Ayder"
 
 console.log(bankuser, bankuserCopy, bankuserClone);
 }
+
+function ex5() {
+  function S(a,b) {
+    return a*b
+  }
+  console.log(S(2,3));
+
+  P=function (a,b) {
+    return a*b
+  }
+  console.log(P(2,3));
+}
+function ex6() {
+  sayHi ('Masha');
+var phrase = "Hi, ";
+function sayHi(name){
+alert( phrase+name );
+}
+}
