@@ -42,3 +42,8 @@ alert( output() );
 alert( output() );
 alert( output() );
 }
+
+function ex5() {
+  A  = [23,-3,34,-5]
+  S
+}
