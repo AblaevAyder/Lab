@@ -112,3 +112,25 @@ function sayHi(name){
 alert( phrase+name );
 }
 }
+
+function ex7() {
+  var value = 0;
+function f() {
+if (1) {
+value = true;
+} else {
+var value = false;
+}
+alert( value );
+}
+f();
+}
+
+function ex8() {
+  function test() {
+alert( window );
+var window = 5;
+alert( window );
+}
+test();
+}
