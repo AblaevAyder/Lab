@@ -47,8 +47,23 @@ alert( output() );
 }
 
 function ex5() {
-  A  = [23,-3,34,-5]
-  S
+  A  = [23,-3,34,-5],B=[], i=0
+  function positive(a) {
+    if(a>0) return true
+    else  return false
+  }
+  while (i<5) {
+  if(positive(A[i])==true){
+    B.push(A[i])
+    i++
+    console.log(i);
+    console.log(B);
+  }}
+  console.log(B);
+}
+
+function ex6() {
+
 }
 
 function ex6() {
