@@ -28,17 +28,17 @@ while (i>=0) {
   i=i-20
 }
 */
-/*
+
 //3
 var i=-1, A=[], sum=0
 while (A[i]!==0) {
     i++
-  A[i]=+prompt("введите A["+i+"]=","")
+  A[i]=+prompt("введите ["+i+"]=","")
 }
 for(i=0;i<A.length;i++){
   sum+= +A[i]}
   console.log("sum = "+sum);
-*/
+
 /*
 //4
 var i=10
