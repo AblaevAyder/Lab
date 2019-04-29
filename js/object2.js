@@ -62,9 +62,7 @@ function ex5() {
   console.log(B);
 }
 
-function ex6() {
 
-}
 
 function ex6() {
   var i,j=0,M=[]
