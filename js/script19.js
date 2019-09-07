@@ -81,7 +81,7 @@ function ex4() {
 }
 }
 
-function ex5() {
+function ex5    () {
   var o = {};
   Object.defineProperty(o, 'a', {
   get() { return 1; },
