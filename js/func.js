@@ -162,4 +162,15 @@ else {console.log("'aczy'<'acxx'=false");}
 console.log('aczy'<'acxx')
 }
 
-console.log(1 && 2 && 3)
+console.log("1 || 2 || 3 = " + 1 || 2 || 3)
+console.log("1 && 2 && 3 = " + 1 && 2 && 3)
+console.log("1 == 2 || 2 || 3 = " + 1 == 2 || 2 || 3)
+console.log("2!=2 || 1<2 = " + 2!=2 || 1<2)
+console.log("1=='1' || 'Привет' = " + 1=='1' || 'Привет')
+console.log("1==='1' || 'Привет' = " + 1==='1' || 'Привет')
+console.log("'Privet'||'Masha' = " + 'Privet'||'Masha')
+console.log("'Privet'&&'Masha' = " + 'Privet'&&'Masha')
+console.log("1 || 2 && 0 = " + 1 || 2 && 0)
+console.log("''|| 2 && 0 || 3 = " + ''|| 2 && 0 || 3)
+console.log("'Abc'<'adb' = " + 'Abc'<'adb')
+console.log("'aczy'<'acxx' = " + 'aczy'<'acxx')
