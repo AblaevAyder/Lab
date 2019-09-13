@@ -71,3 +71,10 @@ for(var x=0;x<n;x++){
 }
 console.log(M);
 }
+
+function ex7() {
+function s(a,b) {
+return (function () {return a*a})()+(function () {return b*b})()
+}
+alert(s(2,3))
+}
