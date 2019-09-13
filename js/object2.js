@@ -1,10 +1,27 @@
 function ex1() {
   const TEST="JavaScript";
-  if (TEST==="JavaScript"){
+  //TEST="C++"; // Присвоение постоянной переменной невозможно
+
+  //const TEST=" C++";// Идентификатор «ТЕСТ» уже объявлен
+
+  //var TEST="C++";// Идентификатор «ТЕСТ» уже объявлен
+
+  //let TEST="C++";// Идентификатор «ТЕСТ» уже объявлен
+
+  /*if (TEST==="JavaScript"){
+const TEST="Java";
+console.log("my favorite is: "+ TEST);
+}*/
+
+/*if (TEST==="JavaScript"){
+const TEST="Java";
+console.log("my favorite is: "+ TEST);
+}
+console.log("Now my favorite is: "+ TEST);*/
+
+
 
   console.log("my favorite is: "+ TEST);
-  }
-console.log("my favorite is: "+ TEST);
 }
 
 function ex2() {
@@ -47,9 +64,20 @@ alert( output() );
 }
 
 function ex5() {
-  A  = [23,-3,34,-5]
-  S
+  A  = [23,-3,34,-5],B=[], i=0
+  function positive(a) {
+    if(a>0) return true
+    else  return false
+  }
+  while (i<5) {
+  if(positive(A[i])==true){
+    B.push(A[i])}
+    i++
+  }
+  console.log(B);
 }
+
+
 
 function ex6() {
   var i,j=0,M=[]
@@ -73,8 +101,29 @@ console.log(M);
 }
 
 function ex7() {
-function s(a,b) {
-return (function () {return a*a})()+(function () {return b*b})()
+  var i,j=0,M=[],k=0
+var n = +prompt("vvedite kol-vo vershin","")
+for(var x=0;x<n;x++){
+  M[x]=[]}
+  for ( i = 0; i < n; i++,j=i) {
+    for(;j<n;j++){
+      if(j==i){
+        M[i][j]=0
+      }
+      else {
+      M[i][j]=+prompt("smejni li vershini ["+(i+1)+"] i ["+(j+1)+"]","")
+      M[j][i]=M[i][j]
+    }
+    }
+
 }
-alert(s(2,3))
+console.log(M);
+for ( i = 0; i < n; i++) {
+  for(j=0;j<n;j++){
+    if(M[i][j]==1){
+      k++
+    }
+  }
+}
+console.log("колво дорог = " + k/2 );
 }

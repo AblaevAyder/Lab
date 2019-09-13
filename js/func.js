@@ -80,7 +80,7 @@ getMSG = (a)=> {return a}
 console.log(getMSG(45));
 
 showOddEven = (x)=>{
-  if (x%2) {alert("Number Odd")}
+if (x%2) {alert("Number Odd")}
 else {alert("Number Even")}
 }
 console.log(showOddEven(34));
@@ -93,19 +93,19 @@ getname=(person)=>{return person.name}
 console.log(getname(person));
 
 getWeight=()=>{var person={age:15,weight:40}
- return person.weight}
+return person.weight}
 console.log(getWeight());}
 
 //2
 function ex2() {
 
 function obm(w,l,h) {
-  console.log("V=" + w*l*h);
+console.log("V=" + w*l*h);
 }
 obm(2,3,2)
 
 obm1=function (w,l,h) {
-  console.log("V2=" + w*l*h);
+console.log("V2=" + w*l*h);
 }
 obm1(2,3,2);
 
@@ -162,4 +162,15 @@ function ex3() {
 console.log('aczy'<'acxx')
 }
 
-console.log(1 && 2 && 3)
+console.log("1 || 2 || 3 = " + 1 || 2 || 3)
+console.log("1 && 2 && 3 = " + 1 && 2 && 3)
+console.log("1 == 2 || 2 || 3 = " + 1 == 2 || 2 || 3)
+console.log("2!=2 || 1<2 = " + 2!=2 || 1<2)
+console.log("1=='1' || 'Привет' = " + 1=='1' || 'Привет')
+console.log("1==='1' || 'Привет' = " + 1==='1' || 'Привет')
+console.log("'Privet'||'Masha' = " + 'Privet'||'Masha')
+console.log("'Privet'&&'Masha' = " + 'Privet'&&'Masha')
+console.log("1 || 2 && 0 = " + 1 || 2 && 0)
+console.log("''|| 2 && 0 || 3 = " + ''|| 2 && 0 || 3)
+console.log("'Abc'<'adb' = " + 'Abc'<'adb')
+console.log("'aczy'<'acxx' = " + 'aczy'<'acxx')

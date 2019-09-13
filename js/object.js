@@ -61,9 +61,7 @@ function ex3() {
 }
 
 function ex4() {
-var   bankuser = {
-
-}
+var   bankuser = {}
 bankuser.name= prompt("vvedite imya")
 bankuser.money = +prompt("vvedite kol-vo deneg")
 bankuser.srok = +prompt("vvedite srok vklada v mesyacah")
