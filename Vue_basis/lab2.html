@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <div id="app">
+    <h1>{{inputValue}}</h1>
+<input @keyup.enter.space.f2="alertInput" @input="inputValue=$event.target.value">
+<input v-model:input.lazy="inputValue">
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+  <script>
+    new Vue({
+      el: "#app",
+      data:{
+        inputValue:"dfsdfsdf",
+      },
+      methods:{
+        alertInput: function(event){
+          alert(event.target.value)
+        },
+
+      }
+    })
+    Vue.config.keyCodes.f2=113
+  </script>
+</body>
+</html>
