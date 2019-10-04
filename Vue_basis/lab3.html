@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .box{
+      width:100px;
+      height:100px;
+      border:1px solid black;
+      margin:20px;
+      display:inline-block;}
+  </style>
+</head>
+<body>
+  <div id="app">
+<div class="box" :style="boxStyle"></div>
+<div class="box" :style="boxStyle"></div>
+<br>
+<input type="text" v-model="color">
+<input type="text" v-model="size">
+<input type="text" v-model="border">
+<input type="text" v-model="radius">
+<hr>
+
+<h1 v-show="isYes">YES</h1>
+<h1 v-show="!isYes">NO</h1>
+<button @click="isYes=!isYes">lalalaal</button>
+
+<h1 v-if="type==='c'">C</h1>
+<h1 v-else-if="type==='b'">B</h1>
+<h1 v-else-if="type==='a'">A</h1>
+<h1 v-else>dont</h1>
+<input type="text" v-model="type">
+
+<template v-if="isActive">
+  <h1>welcome</h1>
+  <p>hello</p>
+</template>
+<template v-else>
+  <h1>Welcome</h1>
+  <p>Hello!!!</p>
+</template>
+<button @click="isActive=!isActive">lol</button>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+  <script>
+    new Vue({
+      el: "#app",
+      data:{
+        color:"",
+        size:"",
+        border:"black",
+        radius:"",
+        isYes:true,
+        type:"",
+        isActive:true
+      },
+      methods:{
+
+      },
+      computed:{
+        boxStyle:function () {
+          return {
+            'width':this.size + "px",
+            'height':this.size + "px",
+            'background':this.color,
+            "border": "3px solid " + this.border,
+            'border-radius':this.radius+"%"
+          }
+        }
+      }
+    })
+
+  </script>
+</body>
+</html>
