@@ -5,12 +5,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
+  <style >
+    .circle{
+      width:200px;
+      height:200px;
+      border-radius: 50%;
+      border: 1px solid black;
+      margin: 10px;
+      display: inline-block;
+    }
+    .red{background-color: red}
+    .black{background-color: black}
+    .blue{background-color: blue}
+    .green{background-color: green}
+    .white{background-color: white}
+  </style>
 </head>
 <body>
   <div id="app">
     <h1>{{inputValue}}</h1>
 <input @keyup.enter.space.f2="alertInput" @input="inputValue=$event.target.value">
-<input v-model:input.lazy="inputValue">
+<input v-model:input.lazy="inputValue"><br>
+
+<div class="circle"  :class = "[color1,{'red':true}]"></div>
+<div class="circle"  :class = "[color2,{'green':true}]"></div>
+<div class="circle" @click= "color=!color" :class = "{'red': color, 'blue':!color}"></div><br>
+
+<input type="text" style="margin-left: 50px" v-model="color1">
+<input type="text" style="margin-left: 50px" v-model="color2">
   </div>
   <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
   <script>
@@ -18,6 +40,9 @@
       el: "#app",
       data:{
         inputValue:"dfsdfsdf",
+        color: false,
+        color1: "",
+        color2: "",
       },
       methods:{
         alertInput: function(event){
